@@ -4,11 +4,7 @@ import { Footer } from '../components/Footer';
 import { ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
-const lessonContent: Record<string, {
-  title: string;
-  content: string[];
-  nextLesson?: { title: string; path: string };
-}> = {
+const lessonContent = {
   notes: {
     title: 'Understanding Notes',
     content: [
