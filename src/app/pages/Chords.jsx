@@ -4,13 +4,7 @@ import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { ChordCard } from '../components/ChordCard';
 
-interface Chord {
-  id: string;
-  name: string;
-  category: string;
-}
-
-const chords: Chord[] = [
+const chords = [
   // Major
   { id: 'c-major', name: 'C Major', category: 'Major' },
   { id: 'g-major', name: 'G Major', category: 'Major' },
@@ -34,7 +28,7 @@ const chords: Chord[] = [
 ];
 
 export default function Chords() {
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   const categories = ['All', 'Major', 'Minor', '7th', 'Extended'];
   

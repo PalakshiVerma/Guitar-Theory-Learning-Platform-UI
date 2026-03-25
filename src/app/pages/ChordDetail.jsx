@@ -2,13 +2,7 @@ import { useParams, Link } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 
-interface Chord {
-  id: string;
-  name: string;
-  category: string;
-}
-
-const chords: Chord[] = [
+const chords = [
   // Major
   { id: 'c-major', name: 'C Major', category: 'Major' },
   { id: 'g-major', name: 'G Major', category: 'Major' },

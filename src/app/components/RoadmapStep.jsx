@@ -1,10 +1,4 @@
-interface RoadmapStepProps {
-  number: number;
-  title: string;
-  isLast?: boolean;
-}
-
-export function RoadmapStep({ number, title, isLast }: RoadmapStepProps) {
+export function RoadmapStep({ number, title, isLast }) {
   return (
     <div className="flex items-center">
       <div className="flex flex-col items-center">

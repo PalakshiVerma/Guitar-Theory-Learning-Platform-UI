@@ -11,7 +11,7 @@ export function Navigation() {
     { name: 'Music', path: '/music' },
   ];
 
-  const isActive = (path: string) => {
+  const isActive = (path) => {
     if (path === '/') {
       return location.pathname === '/';
     }

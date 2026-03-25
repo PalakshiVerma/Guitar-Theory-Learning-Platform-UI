@@ -1,14 +1,6 @@
 import { Link } from 'react-router';
-import { LucideIcon } from 'lucide-react';
 
-interface LearningPathCardProps {
-  title: string;
-  description: string;
-  icon: LucideIcon;
-  to: string;
-}
-
-export function LearningPathCard({ title, description, icon: Icon, to }: LearningPathCardProps) {
+export function LearningPathCard({ title, description, icon: Icon, to }) {
   return (
     <Link to={to}>
       <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-orange-500 transition-all cursor-pointer group">
